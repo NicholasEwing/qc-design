@@ -5,7 +5,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        outfit: ['Outfit', 'Verdana', 'sans-serif']
+        heading: ['Outfit', 'Verdana', 'sans-serif']
+      },
+      backgroundImage: {
+        'gradient-cyan':
+          'linear-gradient(90deg,#6cd5f6 0,#f89d5c 50%,#5b6af0 100%)'
       }
     }
   },
