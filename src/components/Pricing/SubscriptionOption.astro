@@ -1,0 +1,61 @@
+---
+import PerkListItem from './PerkListItem.astro'
+
+export interface Props {
+  heading: string
+  subtitle: string
+  price: number
+  perks: string[]
+  featured: boolean
+  disclaimer?: string
+}
+
+const { heading, subtitle, price, perks, featured, disclaimer } = Astro.props
+---
+
+<div
+  class={`${
+    featured && 'relative bg-white shadow-2xl'
+  } pt-8 px-11 xl:px-20 pb-10 bg-transparent border-t md:border-t-0 md:border-b-0 border-gray-200 rounded-lg`}
+>
+  {
+    featured && (
+      <p class="tracking-px absolute right-2 top-2 max-w-max rounded-full bg-gray-100 px-2.5 py-1 font-heading text-xs uppercase text-gray-900">
+        Popular choice
+      </p>
+    )
+  }
+  <h3 class="mb-0.5 font-heading font-semibold text-lg text-gray-900">
+    {heading}
+  </h3>
+  <p class="mb-5 text-gray-600 text-sm">{subtitle}</p>
+  <div class="mb-9 flex relative">
+    <span
+      class="text-xs mx-1 mt-0.5 text-gray-400 -top-4 absolute italic font-semibold"
+      >{disclaimer}
+    </span>
+    <span class="mr-1 mt-0.5 font-heading font-semibold text-lg text-gray-900"
+      >$</span
+    >
+    <span class="font-heading font-semibold text-6xl sm:text-7xl text-gray-900"
+      >{price}
+    </span>
+    <span class="font-heading font-semibold self-end">/ mo</span>
+  </div>
+  <div class="p-1">
+    <button
+      class={` ${
+        featured ? 'hover:ring-2' : 'hover:ring-1'
+      } mb-9 p-px w-full font-heading font-semibold bg-gradient-green text-xs text-gray-900 hover:ring-2 hover:ring-green-300 hover:ring-opacity-50 uppercase tracking-px overflow-hidden rounded-lg`}
+    >
+      <div
+        class={`p-4 overflow-hidden rounded-lg ${!featured && 'bg-gray-50'}`}
+      >
+        <p class="">Contact Us</p>
+      </div>
+    </button>
+  </div>
+  <ul>
+    {perks.map(perk => <PerkListItem perk={perk} />)}
+  </ul>
+</div>

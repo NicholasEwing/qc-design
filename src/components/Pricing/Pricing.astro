@@ -1,0 +1,74 @@
+---
+import SubscriptionOption from './SubscriptionOption.astro'
+
+const subscriptionOptions = [
+  {
+    heading: 'Logo & Graphic Design',
+    subtitle: 'Included!',
+    price: 0,
+    perks: [
+      '2 Revisions',
+      'All File Formats',
+      'Ready to use',
+      'FREE with subscription'
+    ],
+    featured: false
+  },
+  {
+    heading: 'Basic',
+    subtitle: 'Includes 5 pages',
+    price: 199,
+    perks: [
+      'Unlimited Edits',
+      'Includes Hosting',
+      '24/7 Customer Service',
+      'Lifetime Updates'
+    ],
+    featured: true
+  },
+  {
+    heading: 'Premium',
+    subtitle: 'Best for businesses with time consuming admin work.',
+    price: 499,
+    perks: [
+      'Automate Employee Work',
+      'Includes Consulting Services',
+      'Ecommerce Payment System',
+      'Includes Custom Web App Development'
+    ],
+    featured: false,
+    disclaimer: 'Starting at'
+  }
+]
+---
+
+<section class="pt-28 pb-32 overflow-hidden bg-gray-50">
+  <div class="container mx-auto px-4">
+    <div class="max-w-xl">
+      <span class="inline-block mb-3 text-gray-600 text-base"
+        >Flexible Month-to-Month Pricing Plan</span
+      >
+      <h2
+        class="mb-16 font-heading font-bold text-5xl sm:text-6xl text-gray-900"
+      >
+        Level up your online presence
+      </h2>
+    </div>
+    <div class="flex flex-wrap md:border-x md:border-gray-200">
+      {
+        subscriptionOptions.map(sub => (
+          <div class="w-full md:w-1/3">
+            <SubscriptionOption
+              heading={sub.heading}
+              subtitle={sub.subtitle}
+              price={sub.price}
+              perks={sub.perks}
+              featured={sub.featured}
+              disclaimer={sub.disclaimer}
+            />
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

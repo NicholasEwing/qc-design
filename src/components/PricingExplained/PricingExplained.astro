@@ -1,0 +1,78 @@
+---
+import PricingFeature from './PricingFeature.astro'
+
+const features = [
+  {
+    heading: 'Hosting Fees Included',
+    text: 'Hosting fees are built right into the monthly payment.'
+  },
+  {
+    heading: 'Unlimited Edits',
+    text: 'Change anything you want at anytime and it will be done that day.'
+  },
+  {
+    heading: '24/7 Customer Support',
+    text: 'Call direct anytime day or night, no phone trees or automated responses.'
+  },
+  {
+    heading: 'Web Design & Dev',
+    text: 'Includes over 40 hours of design, development, and testing.'
+  },
+  {
+    heading: 'Citations And Listings',
+    text: "It's important to have your website linked from other websites, like directories."
+  },
+  {
+    heading: 'Google Analytics',
+    text: 'We install Analytics for free to monitor traffic and where it comes from.'
+  }
+]
+---
+
+<section class="py-28 overflow-hidden">
+  <div class="container mx-auto px-4">
+    <div class="mx-auto">
+      <div class="flex flex-wrap -m-11">
+        <div class="w-full md:w-1/2 p-11">
+          <img
+            class="mx-auto"
+            src="payment.png"
+            alt="$0 down, $199 per month, no minimum contract"
+          />
+        </div>
+        <div class="w-full md:w-1/2 p-11">
+          <h2 class="mb-6 font-heading font-bold text-5xl text-gray-900">
+            <span class="bg-gradient-cyan text-transparent bg-clip-text"
+              >$0</span
+            > Down, <span class="bg-gradient-cyan text-transparent bg-clip-text"
+              >$199</span
+            > Per Month, No Minimum Contract
+          </h2>
+          <p class="mb-9 text-gray-900 text-xl">
+            $0 down for a standard 5 page small business website. If you need
+            more than that we provide custom pricing based on the scope of work,
+            number of additional pages, and time involved.
+          </p>
+          <p class="mb-9 text-gray-900 text-xl">
+            You own your domain, content, listing, and profiles. Cancel anytime
+            with no fees or hassle.
+          </p>
+          <div class="flex flex-wrap -m-2 flex-1">
+            <div
+              class="w-full lg:w-auto p-2 grid space-y-4 grid-cols-1 md:grid-cols-2 md:space-y-0 gap-6"
+            >
+              {
+                features.map(feature => (
+                  <PricingFeature
+                    heading={feature.heading}
+                    text={feature.text}
+                  />
+                ))
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,17 @@
+---
+import { IoCheckmarkCircle } from 'react-icons/io5/index.js'
+
+export interface Props {
+  heading: string
+  text: string
+}
+const { heading, text } = Astro.props
+---
+
+<div class="flex flex-1">
+  <IoCheckmarkCircle className="text-5xl text-black w-1/4" />
+  <div class="w-3/4">
+    <h3 class="font-bold text-lg">{heading}</h3>
+    <p>{text}</p>
+  </div>
+</div>
