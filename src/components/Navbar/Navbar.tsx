@@ -8,14 +8,19 @@ interface Link {
 
 interface Props {
   links: Link[]
+  transparent: Boolean
 }
 
-export default function Navbar({ links }: Props) {
+export default function Navbar({ links, transparent }: Props) {
   const [openNav, setOpenNav] = useState(false)
 
   return (
     <section>
-      <div className="relative flex items-center justify-between px-8 py-5">
+      <div
+        className={`${
+          transparent ? 'bg-transparent' : 'bg-black'
+        } relative flex items-center justify-between px-8 py-5`}
+      >
         <div className="w-auto">
           <div className="flex flex-wrap items-center">
             <div className="mr-14 w-auto">

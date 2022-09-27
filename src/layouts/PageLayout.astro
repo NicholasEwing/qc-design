@@ -1,0 +1,44 @@
+---
+import { SITE_TITLE, SITE_DESCRIPTION } from '../config'
+import BaseHead from '../components/BaseHead.astro'
+import Navbar from '../components/Navbar/Navbar'
+import Footer from '../components/Footer/Footer'
+
+const links = [
+  {
+    name: 'Home',
+    path: '/'
+  },
+  {
+    name: 'About',
+    path: '/about'
+  },
+  {
+    name: 'Services',
+    path: '/services'
+  },
+  {
+    name: 'Contact',
+    path: '/contact'
+  }
+]
+
+export interface Props {
+  transparentNav?: Boolean
+}
+
+const { transparentNav = false } = Astro.props
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+
+  <body>
+    <Navbar links={links} transparent={transparentNav} client:load />
+    <slot />
+    <Footer links={links} />
+  </body>
+</html>

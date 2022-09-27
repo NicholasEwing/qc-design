@@ -11,7 +11,7 @@ interface Props {
 
 export default function Footer({ links }: Props) {
   return (
-    <section className="overflow-hidden pt-24">
+    <section className="overflow-hidden bg-white pt-24">
       <div className="container mx-auto px-4">
         <h2 className="mx-auto mb-16 px-4 text-center text-2xl font-bold">
           Queen City Design
