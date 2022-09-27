@@ -1,0 +1,142 @@
+---
+import PageLayout from '../layouts/PageLayout.astro'
+import { IoCheckmarkCircle } from 'react-icons/io5/index.js'
+import PricingFeature from '../components/PricingExplained/PricingFeature.astro'
+import Pricing from '../components/Pricing/Pricing.astro'
+
+const seoFeatures = [
+  {
+    heading: 'Hosting Fees Included',
+    text: 'Hosting fees are built right into the monthly payment.'
+  },
+  {
+    heading: 'Unlimited Edits',
+    text: 'Change anything you want at anytime and it will be done that day.'
+  }
+]
+---
+
+<PageLayout>
+  <section class="pt-28 pb-32 overflow-hidden text-white">
+    <div class="container mx-auto px-4">
+      <div class="mx-auto">
+        <h1
+          class="mb-6 font-heading text-center text-white text-4xl md:text-7xl xl:text-10xl font-bold"
+        >
+          Our Services
+        </h1>
+      </div>
+    </div>
+  </section>
+  <section class="pt-28 pb-32 overflow-hidden bg-white">
+    <div class="container mx-auto px-4">
+      <div class="mx-auto">
+        <div class="flex flex-wrap -m-11">
+          <div class="w-full md:w-1/2 p-11">
+            <img src="/services-1.svg" />
+          </div>
+          <div class="w-full md:w-1/2 p-11">
+            <h2 class="mb-6 font-heading font-bold text-5xl text-black">
+              Web Design & Development Done Differently
+            </h2>
+            <p class="mb-9 text-gray-900 text-xl">
+              What makes us unique in the development world is that we don't use
+              WordPress, frameworks, or page builders. We meticulously write the
+              code line by line. This gives us much more control over the
+              design, and the website performs lightning fast because there's no
+              bloated or messy code that slows it down.
+            </p>
+            <p class="mb-9 text-gray-900 text-xl">
+              Websites built by hand will out-perform most WordPress sites and
+              drag and drop page builders which could cost thousands of dollars.
+              When it comes to the web, the faster and more organized websites
+              win.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="pt-28 pb-32 overflow-hidden bg-white">
+    <div class="container mx-auto px-4">
+      <div class="mx-auto">
+        <div class="flex flex-wrap flex-row-reverse -m-11">
+          <div class="w-full md:w-1/2 p-11">
+            <img src="/services-2.svg" />
+          </div>
+          <div class="w-full md:w-1/2 p-11">
+            <h2 class="mb-6 font-heading font-bold text-5xl text-black">
+              Search Engine Optimization For 2022
+            </h2>
+            <p class="mb-9 text-gray-900 text-xl">
+              If someone tells you they can get you to the front page of Google
+              in 3 months - RUN! Unless your website was featured by The New
+              York Times it could take years to rank in the top of the search
+              results.
+            </p>
+            <p class="mb-9 text-gray-900 text-xl">
+              We offer a number of the latest search engine optimization
+              techniques for 2022:
+            </p>
+            <ul class="mx-4 space-y-2 text-lg">
+              <li class="flex flex-1 space-x-4 items-center">
+                <IoCheckmarkCircle className="text-2xl text-black" />
+                <p>Keyword-Centered Content & Blogs</p>
+              </li>
+              <li class="flex flex-1 space-x-4 items-center">
+                <IoCheckmarkCircle className="text-2xl text-black" />
+                <p>Mobile-First-Optimized for the Best Experience</p>
+              </li>
+              <li class="flex flex-1 space-x-4 items-center">
+                <IoCheckmarkCircle className="text-2xl text-black" />
+                <p>Clean & Organized Code Structure For Web Crawlers</p>
+              </li>
+              <li class="flex flex-1 space-x-4 items-center">
+                <IoCheckmarkCircle className="text-2xl text-black" />
+                <p>Fully Responsive For Mobile, Tablet, & Desktop</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="pt-28 pb-32 overflow-hidden bg-white">
+    <div class="container mx-auto px-4">
+      <div class="mx-auto">
+        <div class="flex flex-wrap -m-11">
+          <div class="w-full md:w-1/2 p-11">
+            <img src="/services-3.svg" />
+          </div>
+          <div class="w-full md:w-1/2 p-11">
+            <h2 class="mb-6 font-heading font-bold text-5xl text-black">
+              Logos, Graphic Design, & Branding
+            </h2>
+            <p class="mb-9 text-gray-900 text-xl">
+              We also offer logo and graphic design services via our own
+              in-house graphic designer. If you have an existing logo that needs
+              a touch up or need a completely new one we can help build your
+              business's brand.
+            </p>
+            <div class="flex flex-wrap">
+              <div
+                class="w-full lg:w-auto grid space-y-4 grid-cols-1 md:space-y-0 gap-6"
+              >
+                {
+                  seoFeatures.map(feature => (
+                    <PricingFeature
+                      heading={feature.heading}
+                      text={feature.text}
+                    />
+                  ))
+                }
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Pricing />
+</PageLayout>
