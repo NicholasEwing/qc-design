@@ -1,0 +1,112 @@
+---
+import PageLayout from '../layouts/PageLayout.astro'
+import MastheadBg from '../layouts/MastheadBg.astro'
+---
+
+<!-- bio -->
+<MastheadBg>
+  <PageLayout transparentNav={true}>
+    <section class="md:py-28 overflow-hidden text-white">
+      <div class="container mx-auto px-4">
+        <div class="mx-auto">
+          <h1
+            class="mb-6 font-heading text-center text-white text-4xl md:text-7xl xl:text-10xl font-bold"
+          >
+            About Us
+          </h1>
+        </div>
+      </div>
+    </section>
+    <section class="bg-white">
+      <div class="mx-auto px-4">
+        <div class="flex flex-col p-6 md:p-28 space-y-8 md:space-y-0">
+          <div class="mx-auto w-1/2 md:w-1/3">
+            <img
+              src="pfp.jpg"
+              alt="Nicholas E."
+              class="rounded-full shadow-xl"
+            />
+          </div>
+          <div class="space-y-8 mx-auto">
+            <p
+              class="font-heading text-black text-sm md:text-md xl:text-lg font-light"
+            >
+              Queen City Design
+            </p>
+            <h2 class="font-heading text-black text-5xl font-bold">
+              Giving Small Businesses The Big Business Treatment
+            </h2>
+            <p class="font-heading text-xl text-gray-800">
+              Hi there - I'm Nicholas, owner and sole developer of Queen City
+              Design.
+              <br />
+              <br />
+              I started programming after achieving success in the electronic sports
+              industry by working for <a
+                href="https://www.blizzard.com/en-us/company/about"
+                class="text-fuchsia-500 underline">Blizzard Entertainment</a
+              > - a Fortune 100 company. Later, I wanted a career more aligned with
+              my personal values and entrepreneurial ambition.
+              <br />
+              <br />
+              In only a year, I taught myself to build websites and applications
+              that solve real-world business problems which landed me positions at
+              large tech companies with considerable responsbility.
+              <br />
+              <br />
+              Over a few years of work, I was solving real problems for real businesses
+              - and seeing the lucrative growth they achieved afterwards. And by
+              doing so, I discovered a problem for many small businesses: <strong
+                >They don't have the funds to drop thousands of dollars upfront
+                on a new website</strong
+              >
+              - making it difficult to compete with the big players in their industries.
+              <br />
+              <br />
+              And the ones that did... got taken advantage of. They were given terrible
+              websites which looked pieced together by someone in a dungeon who hasn't
+              seen design trends for the past decade. Worst of all, the website never
+              focused on solving the underlying problem of <span class="italic"
+                >why</span
+              > they needed a website in the first place (to grow their business)!
+              <br />
+              <br />
+              What a waste.
+              <br />
+              <br />
+              In addition, shady web developers made clients responsible for dealing
+              with their own hosting service, content backups, website edits, general
+              maintanence, SEO optimization and so on... unless they shelled out
+              even more money.
+              <br />
+              <br />
+              Frustrating, right?
+              <br />
+              <br />
+              Many small businesses either can't afford a quality website, and if
+              they can, they don't know who to trust to make something great without
+              putting even more responsibility on themselves. Isn't the point of
+              hiring someone that they solve your problem from start to finish?
+              <br />
+              <br />
+              <strong
+                >So I built a business model to fit their needs: The $0 down and
+                $199 a month model.</strong
+              > It's managable for a small business's bank account and comes with
+              the peace of mind they'll have a strong, revenue-generating web presence
+              to get them closer to their #1 goal: Growing their business.
+              <br />
+              <br />
+              Excited to level up your business's web presence? <a
+                href="/contact"
+                class="text-fuchsia-500 underline"
+                >Reach out now to set up a free consultation.</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TODO: feature section -->
+  </PageLayout>
+</MastheadBg>
