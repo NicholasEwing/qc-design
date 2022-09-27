@@ -1,6 +1,5 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro'
-import MastheadBg from '../layouts/MastheadBg.astro'
 import {
   IoSpeedometerOutline,
   IoCallOutline,
@@ -11,277 +10,275 @@ import {
 ---
 
 <!-- bio -->
-<MastheadBg>
-  <PageLayout transparentNav={true}>
-    <section class="md:py-28 overflow-hidden text-white">
-      <div class="container mx-auto px-4">
-        <div class="mx-auto">
-          <h1
-            class="mb-6 font-heading text-center text-white text-4xl md:text-7xl xl:text-10xl font-bold"
-          >
-            About Us
-          </h1>
-        </div>
+<PageLayout transparentNav={true}>
+  <section class="md:py-28 overflow-hidden text-white">
+    <div class="container mx-auto px-4">
+      <div class="mx-auto">
+        <h1
+          class="mb-6 font-heading text-center text-white text-4xl md:text-7xl xl:text-10xl font-bold"
+        >
+          About Us
+        </h1>
       </div>
-    </section>
-    <section class="bg-white">
-      <div class="mx-auto px-4">
-        <div class="flex flex-col p-6 md:p-28 space-y-8 md:space-y-0">
-          <div class="mx-auto w-1/2 md:w-1/3">
-            <img
-              class="rounded-full shadow-xl"
-              src="/pfp.jpg"
-              alt="Nicholas E."
-            />
-          </div>
-          <div class="space-y-8 mx-auto">
-            <p
-              class="font-heading text-black text-sm md:text-md xl:text-lg font-light"
+    </div>
+  </section>
+  <section class="bg-white">
+    <div class="mx-auto px-4">
+      <div class="flex flex-col p-6 md:p-28 space-y-8 md:space-y-0">
+        <div class="mx-auto w-1/2 md:w-1/3">
+          <img
+            class="rounded-full shadow-xl"
+            src="/pfp.jpg"
+            alt="Nicholas E."
+          />
+        </div>
+        <div class="space-y-8 mx-auto">
+          <p
+            class="font-heading text-black text-sm md:text-md xl:text-lg font-light"
+          >
+            Queen City Design
+          </p>
+          <h2 class="font-heading text-black text-5xl font-bold">
+            Giving Small Businesses The Big Business Treatment
+          </h2>
+          <p class="font-heading text-xl text-gray-800">
+            Hi there - I'm Nicholas, owner and sole developer of Queen City
+            Design.
+            <br />
+            <br />
+            I started programming after achieving success in the electronic sports
+            industry by working for <a
+              href="https://www.blizzard.com/en-us/company/about"
+              class="text-fuchsia-500 underline">Blizzard Entertainment</a
+            > - a Fortune 100 company. Later, I wanted a career more aligned with
+            my personal values and entrepreneurial ambition.
+            <br />
+            <br />
+            In only a year, I taught myself to build websites and applications that
+            solve real-world business problems which landed me positions at large
+            tech companies with considerable responsbility.
+            <br />
+            <br />
+            Over a few years of work, I was solving real problems for real businesses
+            - and seeing the lucrative growth they achieved afterwards. And by doing
+            so, I discovered a problem for many small businesses: <strong
+              >They don't have the funds to drop thousands of dollars upfront on
+              a new website</strong
             >
-              Queen City Design
+            - making it difficult to compete with the big players in their industries.
+            <br />
+            <br />
+            And the ones that did... got taken advantage of. They were given terrible
+            websites which looked pieced together by someone in a dungeon who hasn't
+            seen design trends for the past decade. Worst of all, the website never
+            focused on solving the underlying problem of <span class="italic"
+              >why</span
+            > they needed a website in the first place (to grow their business)!
+            <br />
+            <br />
+            What a waste.
+            <br />
+            <br />
+            In addition, shady web developers made clients responsible for dealing
+            with their own hosting service, content backups, website edits, general
+            maintanence, SEO optimization and so on... unless they shelled out even
+            more money.
+            <br />
+            <br />
+            Frustrating, right?
+            <br />
+            <br />
+            Many small businesses either can't afford a quality website, and if they
+            can, they don't know who to trust to make something great without putting
+            even more responsibility on themselves. Isn't the point of hiring someone
+            that they solve your problem from start to finish?
+            <br />
+            <br />
+            <strong
+              >So I built a business model to fit their needs: The $0 down and
+              $199 a month model.</strong
+            > It's managable for a small business's bank account and comes with the
+            peace of mind they'll have a strong, revenue-generating web presence
+            to get them closer to their #1 goal: Growing their business.
+            <br />
+            <br />
+            Excited to level up your business's web presence? <a
+              href="/contact"
+              class="text-fuchsia-500 underline"
+              >Reach out now to set up a free consultation.</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- TODO: feature section -->
+  <section class="pt-28 pb-20 overflow-hidden bg-gray-50">
+    <div class="container mx-auto px-4">
+      <p
+        class="mb-5 font-heading font-semibold text-xs text-gray-400 text-center uppercase tracking-px"
+      >
+        Business-first approach
+      </p>
+      <h2
+        class="mb-20 font-heading font-semibold text-6xl sm:text-7xl text-gray-900 text-center"
+      >
+        <span class="bg-gradient-cyan text-transparent bg-clip-text"
+          >Quality</span
+        > over Quantity
+      </h2>
+      <div class="flex flex-wrap -m-4">
+        <div class="w-full md:w-1/3 p-4">
+          <div class="md:max-w-xs mx-auto text-center space-y-4">
+            <IoSpeedometerOutline className="text-5xl text-black w-full" />
+            <p class="font-heading font-medium text-xl text-gray-900">
+              SEO-First Code
             </p>
-            <h2 class="font-heading text-black text-5xl font-bold">
-              Giving Small Businesses The Big Business Treatment
+            <p class="font-heading text-lg text-gray-800">
+              Blazing fast sites by default. We hand-build each website to
+              outrank your competition.
+            </p>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 p-4">
+          <div class="md:max-w-xs mx-auto text-center space-y-4">
+            <IoCallOutline className="text-5xl text-black w-full" />
+            <p class="font-heading font-medium text-xl text-gray-900">
+              Unbeatable Customer Service
+            </p>
+            <p class="font-heading text-lg text-gray-800">
+              No automated systems - when you need help, the lead developer
+              answers your call.
+            </p>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 p-4">
+          <div class="md:max-w-xs mx-auto text-center space-y-4">
+            <IoBrushOutline className="text-5xl text-black w-full" />
+            <p class="font-heading font-medium text-xl text-gray-900">
+              Limitless Design
+            </p>
+            <p class="font-heading text-lg text-gray-800">
+              We can edit our designs to cater to your tastes. Everything is
+              customizable!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    class="pt-28 pb-20 overflow-hidden bg-white px-4 flex flex-wrap space-y-4 md:space-y-0 md:space-x-8 justify-center"
+  >
+    <div class="flex space-x-4 justify-center">
+      <div class="w-16">
+        <IoPhonePortraitOutline className="text-5xl text-black" />
+      </div>
+      <span class="h-12 border-r border-black"></span>
+      <div class="w-32 md:w-full">
+        <h3 class="font-heading text-2xl text-black">Phone:</h3>
+        <a
+          href="tel:+1-336-523-8016"
+          class="font-heading underline text-fuchsia-500"
+        >
+          (336) 523-8016
+        </a>
+      </div>
+    </div>
+    <div class="flex space-x-4 justify-center">
+      <div class="w-16">
+        <IoMailOutline className="text-5xl text-black" />
+      </div>
+      <span class="h-12 border-r border-black"></span>
+      <div class="w-32 md:w-full">
+        <h3 class="font-heading text-2xl text-black">Email:</h3>
+        <a
+          href="mailto:nicholas@qc-design.com"
+          class="font-heading underline text-fuchsia-500 whitespace-nowrap"
+        >
+          nicholas@qc-design.com
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="relative pt-28 pb-20 bg-gradient-gray overflow-hidden">
+    <img
+      class="absolute top-1/2 transform -translate-y-1/2 left-0"
+      src="/gradia-assets/elements/sign-up/radial.svg"
+      alt="Decorative background blur image"
+    />
+    <div class="relative z-10 container mx-auto px-4">
+      <div class="flex flex-wrap -m-6 justify-center">
+        <div class="w-full md:w-1/2 p-6">
+          <div class="md:max-w-xl">
+            <h2
+              class="mb-12 font-heading font-bold text-gray-900 text-6xl sm:text-7xl"
+            >
+              Let's Start Building
             </h2>
-            <p class="font-heading text-xl text-gray-800">
-              Hi there - I'm Nicholas, owner and sole developer of Queen City
-              Design.
-              <br />
-              <br />
-              I started programming after achieving success in the electronic sports
-              industry by working for <a
-                href="https://www.blizzard.com/en-us/company/about"
-                class="text-fuchsia-500 underline">Blizzard Entertainment</a
-              > - a Fortune 100 company. Later, I wanted a career more aligned with
-              my personal values and entrepreneurial ambition.
-              <br />
-              <br />
-              In only a year, I taught myself to build websites and applications
-              that solve real-world business problems which landed me positions at
-              large tech companies with considerable responsbility.
-              <br />
-              <br />
-              Over a few years of work, I was solving real problems for real businesses
-              - and seeing the lucrative growth they achieved afterwards. And by
-              doing so, I discovered a problem for many small businesses: <strong
-                >They don't have the funds to drop thousands of dollars upfront
-                on a new website</strong
-              >
-              - making it difficult to compete with the big players in their industries.
-              <br />
-              <br />
-              And the ones that did... got taken advantage of. They were given terrible
-              websites which looked pieced together by someone in a dungeon who hasn't
-              seen design trends for the past decade. Worst of all, the website never
-              focused on solving the underlying problem of <span class="italic"
-                >why</span
-              > they needed a website in the first place (to grow their business)!
-              <br />
-              <br />
-              What a waste.
-              <br />
-              <br />
-              In addition, shady web developers made clients responsible for dealing
-              with their own hosting service, content backups, website edits, general
-              maintanence, SEO optimization and so on... unless they shelled out
-              even more money.
-              <br />
-              <br />
-              Frustrating, right?
-              <br />
-              <br />
-              Many small businesses either can't afford a quality website, and if
-              they can, they don't know who to trust to make something great without
-              putting even more responsibility on themselves. Isn't the point of
-              hiring someone that they solve your problem from start to finish?
-              <br />
-              <br />
-              <strong
-                >So I built a business model to fit their needs: The $0 down and
-                $199 a month model.</strong
-              > It's managable for a small business's bank account and comes with
-              the peace of mind they'll have a strong, revenue-generating web presence
-              to get them closer to their #1 goal: Growing their business.
-              <br />
-              <br />
-              Excited to level up your business's web presence? <a
-                href="/contact"
-                class="text-fuchsia-500 underline"
-                >Reach out now to set up a free consultation.</a
-              >
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- TODO: feature section -->
-    <section class="pt-28 pb-20 overflow-hidden bg-gray-50">
-      <div class="container mx-auto px-4">
-        <p
-          class="mb-5 font-heading font-semibold text-xs text-gray-400 text-center uppercase tracking-px"
-        >
-          Business-first approach
-        </p>
-        <h2
-          class="mb-20 font-heading font-semibold text-6xl sm:text-7xl text-gray-900 text-center"
-        >
-          <span class="bg-gradient-cyan text-transparent bg-clip-text"
-            >Quality</span
-          > over Quantity
-        </h2>
-        <div class="flex flex-wrap -m-4">
-          <div class="w-full md:w-1/3 p-4">
-            <div class="md:max-w-xs mx-auto text-center space-y-4">
-              <IoSpeedometerOutline className="text-5xl text-black w-full" />
-              <p class="font-heading font-medium text-xl text-gray-900">
-                SEO-First Code
-              </p>
-              <p class="font-heading text-lg text-gray-800">
-                Blazing fast sites by default. We hand-build each website to
-                outrank your competition.
-              </p>
-            </div>
-          </div>
-          <div class="w-full md:w-1/3 p-4">
-            <div class="md:max-w-xs mx-auto text-center space-y-4">
-              <IoCallOutline className="text-5xl text-black w-full" />
-              <p class="font-heading font-medium text-xl text-gray-900">
-                Unbeatable Customer Service
-              </p>
-              <p class="font-heading text-lg text-gray-800">
-                No automated systems - when you need help, the lead developer
-                answers your call.
-              </p>
-            </div>
-          </div>
-          <div class="w-full md:w-1/3 p-4">
-            <div class="md:max-w-xs mx-auto text-center space-y-4">
-              <IoBrushOutline className="text-5xl text-black w-full" />
-              <p class="font-heading font-medium text-xl text-gray-900">
-                Limitless Design
-              </p>
-              <p class="font-heading text-lg text-gray-800">
-                We can edit our designs to cater to your tastes. Everything is
-                customizable!
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section
-      class="pt-28 pb-20 overflow-hidden bg-white px-4 flex flex-wrap space-y-4 md:space-y-0 md:space-x-8 justify-center"
-    >
-      <div class="flex space-x-4 justify-center">
-        <div class="w-16">
-          <IoPhonePortraitOutline className="text-5xl text-black" />
-        </div>
-        <span class="h-12 border-r border-black"></span>
-        <div class="w-32 md:w-full">
-          <h3 class="font-heading text-2xl text-black">Phone:</h3>
-          <a
-            href="tel:+1-336-523-8016"
-            class="font-heading underline text-fuchsia-500"
-          >
-            (336) 523-8016
-          </a>
-        </div>
-      </div>
-      <div class="flex space-x-4 justify-center">
-        <div class="w-16">
-          <IoMailOutline className="text-5xl text-black" />
-        </div>
-        <span class="h-12 border-r border-black"></span>
-        <div class="w-32 md:w-full">
-          <h3 class="font-heading text-2xl text-black">Email:</h3>
-          <a
-            href="mailto:nicholas@qc-design.com"
-            class="font-heading underline text-fuchsia-500 whitespace-nowrap"
-          >
-            nicholas@qc-design.com
-          </a>
-        </div>
-      </div>
-    </section>
-    <section class="relative pt-28 pb-20 bg-gradient-gray overflow-hidden">
-      <img
-        class="absolute top-1/2 transform -translate-y-1/2 left-0"
-        src="/gradia-assets/elements/sign-up/radial.svg"
-        alt="Decorative background blur image"
-      />
-      <div class="relative z-10 container mx-auto px-4">
-        <div class="flex flex-wrap -m-6 justify-center">
-          <div class="w-full md:w-1/2 p-6">
-            <div class="md:max-w-xl">
-              <h2
-                class="mb-12 font-heading font-bold text-gray-900 text-6xl sm:text-7xl"
-              >
-                Let's Start Building
-              </h2>
-              <!-- <p class="mb-12 text-lg text-gray-500">
+            <!-- <p class="mb-12 text-lg text-gray-500">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Malesuada tellus vestibulum, commodo pulvinar.
               </p> -->
-              <form
-                name="contact"
-                method="POST"
-                data-netlify="true"
-                data-netlify-recaptcha="true"
-              >
-                <div class="flex flex-wrap -m-2 mb-6">
-                  <div class="w-full md:w-1/2 p-2">
-                    <input
-                      class="w-full px-5 py-3.5 text-gray-500 placeholder-gray-500 bg-white outline-none focus:ring-2 focus:ring-green-300 border border-gray-200 rounded-lg"
-                      type="text"
-                      placeholder="First name"
-                      name="first-name"
-                    />
-                  </div>
-                  <div class="w-full md:w-1/2 p-2">
-                    <input
-                      class="w-full px-5 py-3.5 text-gray-500 placeholder-gray-500 bg-white outline-none focus:ring-2 focus:ring-green-300 border border-gray-200 rounded-lg"
-                      type="text"
-                      placeholder="Last name"
-                      name="last-name"
-                    />
-                  </div>
-                  <div class="w-full p-2">
-                    <input
-                      class="w-full px-5 py-3.5 text-gray-500 placeholder-gray-500 bg-white outline-none focus:ring-2 focus:ring-green-300 border border-gray-200 rounded-lg"
-                      type="text"
-                      placeholder="Email address"
-                      name="email"
-                    />
-                  </div>
-                  <div class="w-full p-2">
-                    <textarea
-                      class="w-full px-5 py-3.5 text-gray-500 placeholder-gray-500 bg-white outline-none focus:ring-2 focus:ring-green-300 border border-gray-200 rounded-lg"
-                      placeholder="Tell us about your project..."
-                      name="message"
-                      cols="30"
-                      rows="10"></textarea>
-                  </div>
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              data-netlify-recaptcha="true"
+            >
+              <div class="flex flex-wrap -m-2 mb-6">
+                <div class="w-full md:w-1/2 p-2">
+                  <input
+                    class="w-full px-5 py-3.5 text-gray-500 placeholder-gray-500 bg-white outline-none focus:ring-2 focus:ring-green-300 border border-gray-200 rounded-lg"
+                    type="text"
+                    placeholder="First name"
+                    name="first-name"
+                  />
                 </div>
-                <div class="flex flex-wrap -m-1.5 mb-8">
-                  <div class="w-auto p-1.5" data-netlify-recaptcha="true"></div>
+                <div class="w-full md:w-1/2 p-2">
+                  <input
+                    class="w-full px-5 py-3.5 text-gray-500 placeholder-gray-500 bg-white outline-none focus:ring-2 focus:ring-green-300 border border-gray-200 rounded-lg"
+                    type="text"
+                    placeholder="Last name"
+                    name="last-name"
+                  />
                 </div>
-                <div class="md:max-w-max">
-                  <button
-                    type="submit"
-                    class="w-full font-heading font-semibold text-xs text-gray-900 uppercase tracking-px overflow-hidden rounded-md hover:ring-2 hover:ring-green-300 hover:ring-opacity-50"
+                <div class="w-full p-2">
+                  <input
+                    class="w-full px-5 py-3.5 text-gray-500 placeholder-gray-500 bg-white outline-none focus:ring-2 focus:ring-green-300 border border-gray-200 rounded-lg"
+                    type="text"
+                    placeholder="Email address"
+                    name="email"
+                  />
+                </div>
+                <div class="w-full p-2">
+                  <textarea
+                    class="w-full px-5 py-3.5 text-gray-500 placeholder-gray-500 bg-white outline-none focus:ring-2 focus:ring-green-300 border border-gray-200 rounded-lg"
+                    placeholder="Tell us about your project..."
+                    name="message"
+                    cols="30"
+                    rows="10"></textarea>
+                </div>
+              </div>
+              <div class="flex flex-wrap -m-1.5 mb-8">
+                <div class="w-auto p-1.5" data-netlify-recaptcha="true"></div>
+              </div>
+              <div class="md:max-w-max">
+                <button
+                  type="submit"
+                  class="w-full font-heading font-semibold text-xs text-gray-900 uppercase tracking-px overflow-hidden rounded-md hover:ring-2 hover:ring-green-300 hover:ring-opacity-50"
+                >
+                  <div
+                    class="relative p-5 px-9 bg-gradient-green overflow-hidden rounded-md"
                   >
-                    <div
-                      class="relative p-5 px-9 bg-gradient-green overflow-hidden rounded-md"
-                    >
-                      <p class="relative z-10">Contact Us</p>
-                    </div>
-                  </button>
-                </div>
-              </form>
-            </div>
+                    <p class="relative z-10">Contact Us</p>
+                  </div>
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
-    </section>
-  </PageLayout>
-</MastheadBg>
+    </div>
+  </section>
+</PageLayout>

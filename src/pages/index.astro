@@ -1,6 +1,5 @@
 ---
 import Masthead from '../components/Masthead/Masthead.astro'
-import MastheadBg from '../layouts/MastheadBg.astro'
 import PricingExplained from '../components/PricingExplained/PricingExplained.astro'
 import LogoCloud from '../components/LogoCloud/LogoCloud.astro'
 import WhatWeDo from '../components/WhatWeDo/WhatWeDo.astro'
@@ -9,18 +8,16 @@ import Pricing from '../components/Pricing/Pricing.astro'
 import PageLayout from '../layouts/PageLayout.astro'
 ---
 
-<MastheadBg>
-  <PageLayout>
-    <Masthead />
+<PageLayout>
+  <Masthead />
 
-    <WhatWeDo />
+  <WhatWeDo />
 
-    <PricingExplained />
+  <PricingExplained />
 
-    <LogoCloud />
+  <LogoCloud />
 
-    <WhoWeAre />
+  <WhoWeAre />
 
-    <Pricing />
-  </PageLayout>
-</MastheadBg>
+  <Pricing />
+</PageLayout>

@@ -3,6 +3,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config'
 import BaseHead from '../components/BaseHead.astro'
 import Navbar from '../components/Navbar/Navbar'
 import Footer from '../components/Footer/Footer'
+import MastheadBg from './MastheadBg.astro'
 
 const links = [
   {
@@ -37,8 +38,12 @@ const { transparentNav = true } = Astro.props
   </head>
 
   <body>
-    <Navbar links={links} transparent={transparentNav} client:load />
-    <slot />
+    <MastheadBg>
+      <Navbar links={links} transparent={transparentNav} client:load />
+      <main>
+        <slot />
+      </main>
+    </MastheadBg>
     <Footer links={links} />
   </body>
 </html>
