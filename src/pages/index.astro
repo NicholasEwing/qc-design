@@ -1,46 +1,17 @@
 ---
-import BaseHead from '../components/BaseHead.astro'
 import Masthead from '../components/Masthead/Masthead.astro'
-import Navbar from '../components/Navbar/Navbar'
-import { SITE_TITLE, SITE_DESCRIPTION } from '../config'
 import MastheadBg from '../layouts/MastheadBg.astro'
 import PricingExplained from '../components/PricingExplained/PricingExplained.astro'
 import LogoCloud from '../components/LogoCloud/LogoCloud.astro'
 import WhatWeDo from '../components/WhatWeDo/WhatWeDo.astro'
 import WhoWeAre from '../components/WhoWeAre/WhoWeAre.astro'
 import Pricing from '../components/Pricing/Pricing.astro'
-import Footer from '../components/Footer/Footer'
-
-const links = [
-  {
-    name: 'Home',
-    path: '/'
-  },
-  {
-    name: 'About',
-    path: '/about'
-  },
-  {
-    name: 'Services',
-    path: '/services'
-  },
-  {
-    name: 'Contact',
-    path: '/contact'
-  }
-]
+import PageLayout from '../layouts/PageLayout.astro'
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-  </head>
-  <body>
-    <MastheadBg>
-      <Navbar links={links} client:load />
-      <Masthead />
-    </MastheadBg>
+<MastheadBg>
+  <PageLayout transparentNav={true}>
+    <Masthead />
 
     <WhatWeDo />
 
@@ -51,7 +22,5 @@ const links = [
     <WhoWeAre />
 
     <Pricing />
-
-    <Footer links={links} />
-  </body>
-</html>
+  </PageLayout>
+</MastheadBg>
