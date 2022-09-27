@@ -8,10 +8,10 @@ interface Link {
 
 interface Props {
   links: Link[]
-  transparent: Boolean
+  transparent?: Boolean
 }
 
-export default function Navbar({ links, transparent }: Props) {
+export default function Navbar({ links, transparent = true }: Props) {
   const [openNav, setOpenNav] = useState(false)
 
   return (
