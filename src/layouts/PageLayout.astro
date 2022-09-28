@@ -35,6 +35,18 @@ const { transparentNav = true } = Astro.props
 <html lang="en">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <script
+      type="text/partytown"
+      src="https://www.googletagmanager.com/gtag/js?id=G-49D1ZS40J5"
+    ></script>
+    <script type="text/partytown">
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+      gtag('config', 'G-49D1ZS40J5')
+    </script>
   </head>
 
   <body>
