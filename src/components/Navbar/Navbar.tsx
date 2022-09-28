@@ -47,7 +47,10 @@ export default function Navbar({ links, transparent = true }: Props) {
         <div className="w-auto">
           <div className="flex flex-wrap items-center">
             <div className="w-auto lg:hidden">
-              <button onClick={() => setOpenNav(!openNav)}>
+              <button
+                aria-label="Open Mobile Navigation Bar"
+                onClick={() => setOpenNav(!openNav)}
+              >
                 <svg
                   className="navbar-burger text-gray-800"
                   width="51"
@@ -99,7 +102,10 @@ export default function Navbar({ links, transparent = true }: Props) {
                     </a>
                   </div>
                   <div className="w-auto p-2">
-                    <button onClick={() => setOpenNav(!openNav)}>
+                    <button
+                      aria-label="Open Mobile Navigation Bar"
+                      onClick={() => setOpenNav(!openNav)}
+                    >
                       <svg
                         width="24"
                         height="24"
