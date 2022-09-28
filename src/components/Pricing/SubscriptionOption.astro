@@ -47,12 +47,12 @@ const { heading, subtitle, price, perks, featured, disclaimer } = Astro.props
       href="/contact"
       class={` ${
         featured ? 'hover:ring-2' : 'hover:ring-1'
-      } mb-9 p-px w-full font-heading font-semibold bg-gradient-green text-xs text-gray-900 hover:ring-2 hover:ring-green-300 hover:ring-opacity-50 uppercase tracking-px overflow-hidden rounded-lg`}
+      } block text-center mb-9 p-px w-full font-heading font-semibold bg-gradient-green text-xs text-gray-900 hover:ring-2 hover:ring-green-300 hover:ring-opacity-50 uppercase tracking-px overflow-hidden rounded-lg`}
     >
       <div
         class={`p-4 overflow-hidden rounded-lg ${!featured && 'bg-gray-50'}`}
       >
-        <p class="">Contact Us</p>
+        <p>Contact Us</p>
       </div>
     </a>
   </div>
