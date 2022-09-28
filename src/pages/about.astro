@@ -8,6 +8,7 @@ import {
   IoMailOutline
 } from 'react-icons/io5/index.js'
 import ContactForm from '../components/Contact/ContactForm.astro'
+import { Image } from '@astrojs/image/components'
 ---
 
 <PageLayout>
@@ -26,10 +27,12 @@ import ContactForm from '../components/Contact/ContactForm.astro'
     <div class="mx-auto px-4">
       <div class="flex flex-col p-6 md:p-28 space-y-8 md:space-y-0">
         <div class="mx-auto w-1/2 md:w-1/6">
-          <img
+          <Image
             class="rounded-full shadow-xl"
             src="/pfp.jpg"
             alt="Nicholas E."
+            width="350"
+            aspectRatio="1:1"
           />
         </div>
         <div class="space-y-8 mx-auto">
