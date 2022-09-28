@@ -24,7 +24,7 @@ export default function Navbar({ links, transparent = true }: Props) {
         <div className="w-auto">
           <div className="flex flex-wrap items-center">
             <div className="mr-14 w-auto">
-              <a href="#">
+              <a href="/">
                 <h2 className="absolute top-5 text-2xl font-bold text-white">
                   Queen City Design
                 </h2>
