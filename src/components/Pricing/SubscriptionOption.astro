@@ -31,7 +31,7 @@ const { heading, subtitle, price, perks, featured, disclaimer } = Astro.props
   <p class="mb-5 text-gray-600 text-sm">{subtitle}</p>
   <div class="mb-9 flex relative">
     <span
-      class="text-xs mx-1 mt-0.5 text-gray-400 -top-4 absolute italic font-semibold"
+      class="text-xs mx-1 mt-0.5 text-gray-600 -top-4 absolute italic font-semibold"
       >{disclaimer}
     </span>
     <span class="mr-1 mt-0.5 font-heading font-semibold text-lg text-gray-900"
@@ -43,7 +43,8 @@ const { heading, subtitle, price, perks, featured, disclaimer } = Astro.props
     <span class="font-heading font-semibold self-end">/ mo</span>
   </div>
   <div class="p-1">
-    <button
+    <a
+      href="/contact"
       class={` ${
         featured ? 'hover:ring-2' : 'hover:ring-1'
       } mb-9 p-px w-full font-heading font-semibold bg-gradient-green text-xs text-gray-900 hover:ring-2 hover:ring-green-300 hover:ring-opacity-50 uppercase tracking-px overflow-hidden rounded-lg`}
@@ -53,7 +54,7 @@ const { heading, subtitle, price, perks, featured, disclaimer } = Astro.props
       >
         <p class="">Contact Us</p>
       </div>
-    </button>
+    </a>
   </div>
   <ul>
     {perks.map(perk => <PerkListItem perk={perk} />)}
