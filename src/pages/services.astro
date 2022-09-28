@@ -4,20 +4,24 @@ import { IoCheckmarkCircle } from 'react-icons/io5/index.js'
 import PricingFeature from '../components/PricingExplained/PricingFeature.astro'
 import Pricing from '../components/Pricing/Pricing.astro'
 
-const seoFeatures = [
+const automationFeatures = [
   {
-    heading: 'Hosting Fees Included',
-    text: 'Hosting fees are built right into the monthly payment.'
+    heading: 'Enterprise Solutions at Small Business Prices',
+    text: 'Automate routine work - no need for urgent hiring frenzies as your business scales'
   },
   {
-    heading: 'Unlimited Edits',
-    text: 'Change anything you want at anytime and it will be done that day.'
+    heading: 'Consulting Services',
+    text: "We'll sit down and build out optimal workflows that drive growth and minimize expenses"
+  },
+  {
+    heading: 'Custom Web App Development',
+    text: 'Beautiful, custom tools to manage your business with lifetime updates'
   }
 ]
 ---
 
 <PageLayout>
-  <section class="pt-28 pb-32 overflow-hidden text-white">
+  <section class="md:py-28 overflow-hidden text-white">
     <div class="container mx-auto px-4">
       <div class="mx-auto">
         <h1
@@ -41,16 +45,24 @@ const seoFeatures = [
             </h2>
             <p class="mb-9 text-gray-900 text-xl">
               What makes us unique in the development world is that we don't use
-              WordPress, frameworks, or page builders. We meticulously write the
-              code line by line. This gives us much more control over the
-              design, and the website performs lightning fast because there's no
-              bloated or messy code that slows it down.
+              WordPress, copy and pasted designs, or page builders. We
+              meticulously craft our websites line by line. This gives us much
+              more control over the design, and the website performs lightning
+              fast because there's no bloated or messy code that slows it down.
             </p>
             <p class="mb-9 text-gray-900 text-xl">
-              Websites built by hand will out-perform most WordPress sites and
-              drag and drop page builders which could cost thousands of dollars.
-              When it comes to the web, the faster and more organized websites
-              win.
+              <strong
+                >Websites built by hand will out-perform most WordPress sites</strong
+              >
+              and drag and drop page builders which could cost thousands of dollars.
+              <a
+                href="https://www2.deloitte.com/content/dam/Deloitte/ie/Documents/Consulting/Milliseconds_Make_Millions_report.pdf"
+                target="_blank"
+                class="text-fuchsia-500 underline"
+              >
+                When it comes to the web, the faster and more organized websites
+                win.</a
+              >
             </p>
           </div>
         </div>
@@ -71,7 +83,7 @@ const seoFeatures = [
             <p class="mb-9 text-gray-900 text-xl">
               If someone tells you they can get you to the front page of Google
               in 3 months - RUN! Unless your website was featured by The New
-              York Times it could take years to rank in the top of the search
+              York Times, it could take years to rank in the top of the search
               results.
             </p>
             <p class="mb-9 text-gray-900 text-xl">
@@ -79,10 +91,6 @@ const seoFeatures = [
               techniques for 2022:
             </p>
             <ul class="mx-4 space-y-2 text-lg">
-              <li class="flex flex-1 space-x-4 items-center">
-                <IoCheckmarkCircle className="text-2xl text-black" />
-                <p>Keyword-Centered Content & Blogs</p>
-              </li>
               <li class="flex flex-1 space-x-4 items-center">
                 <IoCheckmarkCircle className="text-2xl text-black" />
                 <p>Mobile-First-Optimized for the Best Experience</p>
@@ -94,6 +102,17 @@ const seoFeatures = [
               <li class="flex flex-1 space-x-4 items-center">
                 <IoCheckmarkCircle className="text-2xl text-black" />
                 <p>Fully Responsive For Mobile, Tablet, & Desktop</p>
+              </li>
+              <li class="flex flex-1 space-x-4 items-center">
+                <IoCheckmarkCircle className="text-2xl text-black" />
+                <p>
+                  Optimized for <a
+                    href="https://backlinko.com/hub/seo/core-web-vitals"
+                    target="_blank"
+                    class="underline text-fuchsia-500"
+                    >Google's 2021 Core Web Vitals update</a
+                  >
+                </p>
               </li>
             </ul>
           </div>
@@ -110,20 +129,29 @@ const seoFeatures = [
           </div>
           <div class="w-full md:w-1/2 p-11">
             <h2 class="mb-6 font-heading font-bold text-5xl text-black">
-              Logos, Graphic Design, & Branding
+              Scalable Systems, Not Just Websites
             </h2>
             <p class="mb-9 text-gray-900 text-xl">
-              We also offer logo and graphic design services via our own
-              in-house graphic designer. If you have an existing logo that needs
-              a touch up or need a completely new one we can help build your
-              business's brand.
+              We also offer custom web application development to automate
+              tedious, manual business processes. Do you or your employees have
+              a laundry list of administrative chores everytime you get a new
+              customer?
+              <br />
+              <br />
+              What happens if you explode in popularity overnight? Could your employees
+              handle 100, 1,000 or 10,000 new customers without making a single mistake?
+              In those moments, having a system that scales separates small businesses
+              from the big players.
+              <br />
+              <br />
+              That's where we come in.
             </p>
             <div class="flex flex-wrap">
               <div
                 class="w-full lg:w-auto grid space-y-4 grid-cols-1 md:space-y-0 gap-6"
               >
                 {
-                  seoFeatures.map(feature => (
+                  automationFeatures.map(feature => (
                     <PricingFeature
                       heading={feature.heading}
                       text={feature.text}
