@@ -25,9 +25,7 @@ export default function Navbar({ links, transparent = true }: Props) {
           <div className="flex flex-wrap items-center">
             <div className="mr-14 w-auto">
               <a href="/">
-                <h2 className="absolute top-5 text-2xl font-bold text-white">
-                  Queen City Design
-                </h2>
+                <img src="/qc-logo.png" className="h-12" />
               </a>
             </div>
           </div>
@@ -94,13 +92,6 @@ export default function Navbar({ links, transparent = true }: Props) {
             <div className="flex h-full flex-wrap justify-between">
               <div className="w-full">
                 <div className="-m-2 flex items-center justify-between">
-                  <div className="w-auto p-2">
-                    <a className="inline-block" href="/">
-                      <h2 className="top-5 text-2xl font-bold text-black">
-                        Queen City Design
-                      </h2>
-                    </a>
-                  </div>
                   <div className="w-auto p-2">
                     <button
                       aria-label="Open Mobile Navigation Bar"
