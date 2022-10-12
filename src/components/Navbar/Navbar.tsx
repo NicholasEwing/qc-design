@@ -24,8 +24,14 @@ export default function Navbar({ links, transparent = true }: Props) {
         <div className="w-auto">
           <div className="flex flex-wrap items-center">
             <div className="mr-14 w-auto">
-              <a href="/">
-                <img src="/qc-logo.png" className="h-12" />
+              <a href="/" aria-label="Link to Home Page">
+                <img
+                  src="/qc-logo.png"
+                  width="43"
+                  height="48"
+                  className="h-12"
+                  alt="Queen City Design Logo"
+                />
               </a>
             </div>
           </div>
